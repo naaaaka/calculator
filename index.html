@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="style.css">
+        <title>電卓</title>
+    </head>
+    <body>
+        <div class="frame">
+            <div  class = "display" id="result"></div>
+            <div class="buttons">
+                <div class="buttonsLine">
+                    <input type="button" value="7" onclick=btnAction("7")>
+                    <input type="button" value="8" onclick=btnAction("8")>
+                    <input type="button" value="9" onclick=btnAction("9")>
+                    <input type="button" value="+" onclick=operator("+")>
+                </div>
+                <div class="buttonsLine">
+                    <input type="button" value="4" onclick=btnAction("4")>
+                    <input type="button" value="5" onclick=btnAction("5")>
+                    <input type="button" value="6" onclick=btnAction("6")>
+                    <input type="button" value="-" onclick=operator("-")>
+                </div class="buttonsLine">
+                <div class="buttonsLine">
+                    <input type="button" value="1" onclick=btnAction("1")>
+                    <input type="button" value="2" onclick=btnAction("2")>
+                    <input type="button" value="3" onclick=btnAction("3")>
+                    <input type="button" value="*" onclick=operator("*")>
+                </div>
+                <div class="buttonsLine">
+                    <input type="button" value="0" onclick=btnAction("0")>
+                    <input type="button" value="00" onclick=btnAction("00")>
+                    <input type="button" value="." id = "point" onclick=pointer()>
+                    <input type="button" value="/" onclick=operator("/")>                
+                </div>
+                <div class="buttonsLine">
+                    <input class="wideButton" type="button" value="AC" onclick=AC()>
+                    <input class="wideButton" type="button" value="=" onclick=calc()> 
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </bofy>
+</html>
